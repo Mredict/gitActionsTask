@@ -19,7 +19,7 @@ jobs:
           java-version: '21'
 
       - name: Build project
-        run: ./gradlew build
+        run: mvn clean install
 
       - name: Run unit tests
-        run: ./gradlew test
+        run: mvn test
